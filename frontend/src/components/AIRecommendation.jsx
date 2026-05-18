@@ -8,7 +8,7 @@ function AIRecommendation() {
     const getAIRecommendation = async () => {
 
         const response = await axios.post(
-            "http://localhost:5000/api/ai/recommend",
+            "https://employee-backend-7hl3.onrender.com/api/ai/recommend",
             {
                 name: "Aman Verma",
                 department: "Development",

@@ -9,7 +9,7 @@ function SearchFilter() {
     const handleSearch = async () => {
 
         const response = await axios.get(
-            `http://localhost:5000/api/employees/search?department=${department}`
+            `https://employee-backend-7hl3.onrender.com/api/employees/search?department=${department}`
         );
 
         setEmployees(response.data);
